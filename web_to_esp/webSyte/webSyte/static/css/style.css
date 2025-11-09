@@ -1,4 +1,51 @@
 /* static/css/styles.css */
+.center {
+    text-align: center;
+}
+.button_set {
+  display: flex; /* Делаем контейнер flex-контейнером */
+  justify-content: center
+}
+
+.side-button {
+  border-radius: 15px;
+  position: fixed;
+  bottom: 100px; /* Отступ от нижнего края */
+  width: 150px; /* Пример ширины */
+  height: 40px; /* Пример высоты */
+  text-align: center; /* Центрирование текста */
+  line-height: 40px; /* Центрирование текста по вертикали */
+  background-color: blue;
+  color: white;
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+.left {
+  left: 20px; /* Отступ от левого края */
+}
+
+.right {
+  right: 20px; /* Отступ от правого края */
+}
+
+.bottom_center {
+  position: bottom; /* Привязываем к нижней части */
+  bottom: 0; /* Прижимаем к нижнему краю */
+  left: 50%; /* Смещаем на половину ширины родителя */
+  transform: translateX(-50%); /* Центрируем, смещая на половину ширины самой кнопки */
+  padding: 10px 20px; /* Добавляем отступы внутри кнопки */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.center-container {
+    display: block;          /* Активирует Flexbox-контейнер */
+    margin: 0 auto;
+    height: 100vh;           /* Устанавливает высоту контейнера равной высоте области просмотра (Viewport Height) */
+    width: 100%;             /* Растягивает контейнер на всю ширину */
+}
+
 body hl {color: red;}
-body h2 {color: green;}
-img{width:250px;}
+body h2 {color: blue;}

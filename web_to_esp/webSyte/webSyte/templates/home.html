@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>wather in home</title>
-</head>
-<body>
- <hl>Погода на улице</hl>
- <img src="{% static 'image/image1.jpg' %}">
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системы для создания роботов</title>
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+  </head>
+  <body>
+    <header>
+      <h1 align="center"> Управление освещением и температурой</h1>
+      <nav>
+        <ul>
+          <li><a href="/room">Температура в доме</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h2 align="center">Температура на улице ...</h2>
+          <div class="button_set">
+            <button>Кнопка 1</button>
+            <button>Кнопка 2</button>
+            <button>Кнопка 3</button>
+          </div>
+          <p class="center">
+          <img src="{% static 'images/image1.jpg'%}" alt="Вид дома"  />
+          </p>
+          <p>Но может быть и о семантике, я пока не решил.</p>
+        </section>
+        <section>
+          <h2>Вторая секция</h2>
+          <p>Она тоже обо мне</p>
+        </section>
+        <section>
+          <h2>И третья</h2>
+          <p>Вы уже должны были начать догадываться.</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
+    </footer>
+    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+  </body>
 </html>
